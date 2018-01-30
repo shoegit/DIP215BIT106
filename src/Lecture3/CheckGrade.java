@@ -18,9 +18,33 @@ public class CheckGrade {
         
         // check whether inputs are valid
         if (stu1grade >= 'A' && stu1grade <= 'F' && stu2grade >= 'A' && stu2grade <= 'F') {
+            
             // check whether either one needs help
-            if (stu1grade >= 'C' || stu2grade >= 'C') {
-                System.out.println("Help Required");
+            System.out.println("Student 1:");
+            switch (stu1grade)
+            {
+                case 'A': case 'B':
+                    System.out.println("Good");
+                    break;
+                case 'C': case 'D':
+                    System.out.println("Help required");
+                    break;
+                default:
+                    System.out.println("Please see ms Ng");
+                    break;
+            }
+            System.out.println("Student 2:");
+             switch (stu2grade)
+            {
+                case 'A': case 'B':
+                    System.out.println("Good");
+                    break;
+                case 'C': case 'D':
+                    System.out.println("Help required");
+                    break;
+                default:
+                    System.out.println("Please see ms Ng");
+                    break;
             }
             
             // check who did better
