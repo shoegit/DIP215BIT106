@@ -15,11 +15,15 @@ public class CheckGrade {
         char stu1grade = sc.next().charAt(0);
         System.out.println("What grade did student 2 get?");
         char stu2grade = sc.next().charAt(0);
-
+        
+        // check whether inputs are valid
         if (stu1grade >= 'A' && stu1grade <= 'F' && stu2grade >= 'A' && stu2grade <= 'F') {
+            // check whether either one needs help
             if (stu1grade >= 'C' || stu2grade >= 'C') {
                 System.out.println("Help Required");
             }
+            
+            // check who did better
             if (stu1grade < stu2grade) {
                 System.out.println("Student 1 got the better grade");
             } else if (stu2grade < stu1grade) {
