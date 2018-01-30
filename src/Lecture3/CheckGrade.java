@@ -1,5 +1,5 @@
-import java.util.*;
 package Lecture3;
+import java.util.*;
 
 /**
  * A program to check the user's grade
