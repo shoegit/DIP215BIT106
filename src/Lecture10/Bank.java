@@ -46,6 +46,14 @@ public class Bank {
         return true;
     }
 
+    public BankAccount findAccount(String owner)
+    {
+        for (int i = 0; i < numOfAccounts; i++)
+            if (account[i].getOwner().equalsIgnoreCase(owner))
+                return account[i];
+        return null;
+    }
+    
 // methods returns (summary) information about the container
     public double calcTotal() {
         double sum = 0.0;
